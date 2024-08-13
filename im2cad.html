@@ -1,0 +1,180 @@
+<html>
+<head>
+	<title>IM2CAD</title>
+    <link rel="stylesheet" href="mystyle.css" type="text/css" media="screen" title="no title" charset="utf-8" />
+
+	<script>
+	  (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+	  (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+	  m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+	  })(window,document,'script','https://www.google-analytics.com/analytics.js','ga');
+
+	  ga('create', 'UA-82900813-1', 'auto');
+	  ga('send', 'pageview');
+
+	</script>
+
+	<script language="javascript"> 
+	function toggle(showHideDiv, switchTextDiv) {
+		var ele = document.getElementById("toggleText");
+		var text = document.getElementById("displayText");
+		if(ele.style.display == "block") {
+	    	ele.style.display = "none";
+			text.style.display = "none";
+			//text.innerHTML = "Click to see more examples ...";
+	  	}
+		else {
+			ele.style.display = "block";
+			text.style.display = "none";
+			//text.innerHTML = "Hide more examples";
+		}
+	} 
+	</script>
+</head>
+
+
+
+<body>
+	<div id="container">
+
+	<div id="paperinfo">
+		<br>
+		<h1>IM2CAD</h1>
+
+		<center>
+		<table>
+		    <tr>
+		        <td align="center" width="200px">
+					<a href="http://homes.cs.washington.edu/~izadinia">Hamid Izadinia</a>        	
+		        </td>
+		        <td align="center" width="200px">
+					<a href="http://shanqi.github.io">Qi Shan</a>        	
+		        </td>
+		        <td align="center" width="200px">
+					<a href="http://homes.cs.washington.edu/~seitz">Steven M. Seitz</a>        	
+		        </td>
+		    </tr>
+
+		</table>
+		</center>
+		
+		<hr>
+		<br>
+		<div id="header_img_container">
+			<a href="files/im2cad_CVPR17.pdf"><img width=1000px id="header_img" src="./im2cad_images/im2cad_teaser.png"/></a><p class="caption">IM2CAD takes a single photo of a real scene (left), and automatically reconstructs a 3D CAD model (right) that is similar to the real scene.</p></div>
+	</div>
+
+	<hr>
+	<br>
+
+	<h2>Abstract</h2>
+	<br>
+
+	<table class="table papers" id="papers" style="margin-top:0;margin-left:50px;margin-right:50px;">
+	    <tr>
+	        <td>
+	            <div>
+	            	<center>
+	                Given a single photo of a room and a large database of furniture CAD models, our goal is to reconstruct a scene that is as similar as possible to the scene depicted in the photograph, and composed of objects drawn from the database. We present a completely automatic system to address this IM2CAD problem that produces high quality results on challenging imagery from interior home design and remodeling websites. Our approach iteratively optimizes the placement and scale of objects in the room to best match scene renderings to the input photo, using image comparison metrics trained via deep convolutional neural nets. By operating jointly on the full scene at once, we account for inter-object occlusions. We also show the applicability of our method in standard scene understanding benchmarks where we obtain significant improvement.
+	            	</center>
+	            </div>
+	        </td>
+	    </tr>
+	    <tr>
+	        <td>
+	            <div>
+	            	<center>
+	            		<br>
+						<a href="files/im2cad_CVPR17.pdf"><img width=1000px src="./im2cad_images/im2cad_thumb.jpg"/></a>
+	            	</center>
+	            </div>
+	        </td>
+	    </tr>
+	</table>
+	
+	<br>
+
+		
+
+	<hr>
+	<br>
+	
+	<center>
+		<h2>Reconstruction results</h2><br/>
+			<table class="table papers" id="papers" style="margin-top:0;margin-left:50px;margin-right:50px;">
+			    <tr>
+			        <td>
+			            <div>
+			            	<center>
+							In each example the left image is the real input image and the right image is the rendered 3D CAD model produced by IM2CAD.
+			            	</center>
+			            </div>
+			        </td>
+			    </tr>
+
+			</table>
+
+			<br>
+
+			<a href="./im2cad_images/im-00.jpg"><img height=130px width=400px id="header_img" src="./im2cad_images/im-00.jpg"/></a>
+			<a href="./im2cad_images/im-02.jpg"><img height=130px width=400px id="header_img" src="./im2cad_images/im-02.jpg"/></a>
+			<a href="./im2cad_images/im-05.jpg"><img height=130px width=400px id="header_img" src="./im2cad_images/im-05.jpg"/></a>
+			<a href="./im2cad_images/im-30.jpg"><img height=130px width=400px id="header_img" src="./im2cad_images/im-30.jpg"/></a>
+			<a href="./im2cad_images/im-31.jpg"><img height=130px width=400px id="header_img" src="./im2cad_images/im-31.jpg"/></a>
+			<a href="./im2cad_images/im-24.jpg"><img height=130px width=400px id="header_img" src="./im2cad_images/im-24.jpg"/></a>
+			<a href="./im2cad_images/im-26.jpg"><img height=130px width=400px id="header_img" src="./im2cad_images/im-26.jpg"/></a>
+			<a href="./im2cad_images/im-07.jpg"><img height=130px width=400px id="header_img" src="./im2cad_images/im-07.jpg"/></a>
+			<a href="./im2cad_images/im-08.jpg"><img height=130px width=400px id="header_img" src="./im2cad_images/im-08.jpg"/></a>
+			<a href="./im2cad_images/im-10.jpg"><img height=130px width=400px id="header_img" src="./im2cad_images/im-10.jpg"/></a>
+			<a href="./im2cad_images/im-14.jpg"><img height=130px width=400px id="header_img" src="./im2cad_images/im-14.jpg"/></a>
+			<a href="./im2cad_images/im-23.jpg"><img height=130px width=400px id="header_img" src="./im2cad_images/im-23.jpg"/></a>
+
+		<br/>
+		<a id="displayText" href="javascript:toggle();">Click to see more examples ...</a>
+		<div id="toggleText" style="display: none">
+			<a href="./im2cad_images/im-11.jpg"><img height=130px width=400px id="header_img" src="./im2cad_images/im-11.jpg"/></a>
+			<a href="./im2cad_images/im-01.jpg"><img height=130px width=400px id="header_img" src="./im2cad_images/im-01.jpg"/></a>
+			<a href="./im2cad_images/im-09.jpg"><img height=130px width=400px id="header_img" src="./im2cad_images/im-09.jpg"/></a>
+			<a href="./im2cad_images/im-12.jpg"><img height=130px width=400px id="header_img" src="./im2cad_images/im-12.jpg"/></a>
+			<a href="./im2cad_images/im-03.jpg"><img height=130px width=400px id="header_img" src="./im2cad_images/im-03.jpg"/></a>
+			<a href="./im2cad_images/im-04.jpg"><img height=130px width=400px id="header_img" src="./im2cad_images/im-04.jpg"/></a>
+			<a href="./im2cad_images/im-13.jpg"><img height=130px width=400px id="header_img" src="./im2cad_images/im-13.jpg"/></a>
+			<a href="./im2cad_images/im-15.jpg"><img height=130px width=400px id="header_img" src="./im2cad_images/im-15.jpg"/></a>
+			<a href="./im2cad_images/im-06.jpg"><img height=130px width=400px id="header_img" src="./im2cad_images/im-06.jpg"/></a>
+			<a href="./im2cad_images/im-16.jpg"><img height=130px width=400px id="header_img" src="./im2cad_images/im-16.jpg"/></a>
+			<a href="./im2cad_images/im-17.jpg"><img height=130px width=400px id="header_img" src="./im2cad_images/im-17.jpg"/></a>
+			<a href="./im2cad_images/im-18.jpg"><img height=130px width=400px id="header_img" src="./im2cad_images/im-18.jpg"/></a>
+			<a href="./im2cad_images/im-19.jpg"><img height=130px width=400px id="header_img" src="./im2cad_images/im-19.jpg"/></a>
+			<a href="./im2cad_images/im-20.jpg"><img height=130px width=400px id="header_img" src="./im2cad_images/im-20.jpg"/></a>
+			<a href="./im2cad_images/im-21.jpg"><img height=130px width=400px id="header_img" src="./im2cad_images/im-21.jpg"/></a>
+			<a href="./im2cad_images/im-22.jpg"><img height=130px width=400px id="header_img" src="./im2cad_images/im-22.jpg"/></a>
+			<a href="./im2cad_images/im-25.jpg"><img height=130px width=400px id="header_img" src="./im2cad_images/im-25.jpg"/></a>
+			<a href="./im2cad_images/im-27.jpg"><img height=130px width=400px id="header_img" src="./im2cad_images/im-27.jpg"/></a>
+			<a href="./im2cad_images/im-28.jpg"><img height=130px width=400px id="header_img" src="./im2cad_images/im-28.jpg"/></a>
+			<a href="./im2cad_images/im-29.jpg"><img height=130px width=400px id="header_img" src="./im2cad_images/im-29.jpg"/></a>
+			<a href="./im2cad_images/sunrgbd_im-01.jpg"><img height=130px width=400px id="header_img" src="./im2cad_images/sunrgbd_im-01.jpg"/></a>
+			<a href="./im2cad_images/sunrgbd_im-00.jpg"><img height=130px width=400px id="header_img" src="./im2cad_images/sunrgbd_im-00.jpg"/></a>
+			<a href="./im2cad_images/sunrgbd_im-02.jpg"><img height=130px width=400px id="header_img" src="./im2cad_images/sunrgbd_im-02.jpg"/></a>
+
+		</div>
+	</center>
+
+	<br>
+	
+	<hr>
+
+		<h2>Bibtex</h2>
+		<div style="text-align:left; width:60%">
+			<pre id="bibtex">
+	@inproceedings{izadinia2017im2cad,
+	  title={IM2CAD},
+	  author={Izadinia, Hamid and Shan, Qi and Seitz, Steven M},
+	  booktitle={CVPR},
+	  year={2017}
+	}
+			</pre>
+		</div>
+	
+</body>
+
+</html>
