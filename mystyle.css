@@ -734,18 +734,20 @@ tr:hover{
 .chunk {
     font-size: 1.1em;
 }
-
 .work-experience {
     display: flex;
-    justify-content: space-around;
+    justify-content: space-between; /* Evenly distribute the companies across each row */
     align-items: center;
     flex-wrap: wrap;
     margin: 20px 0;
+    max-width: 1200px; /* Optional: Set a max-width for the container */
+    margin: 0 auto; /* Center the container */
 }
 
 .company {
     text-align: center;
-    margin: 10px;
+    margin: 20px;
+    width: 20%; /* Each company takes up about 22% of the row's width */
 }
 
 .company img {
@@ -767,4 +769,28 @@ tr:hover{
     font-size: 0.9em;
     color: #555;
     margin-top: 5px;
+}
+
+.publication-list {
+    list-style-type: none;
+    padding: 0;
+    margin: 0;
+}
+
+.publication-item {
+    display: flex;
+    align-items: center;
+    margin-bottom: 20px;
+}
+
+.publication-item img {
+    width: 100px;
+    height: 100px;
+    border-radius: 50%;
+    margin-right: 20px;
+}
+
+.publication-item p {
+    margin: 0;
+    font-size: 18px;
 }
